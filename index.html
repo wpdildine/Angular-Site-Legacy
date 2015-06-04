@@ -1,0 +1,128 @@
+<html ng-app="singlePage">
+        
+    <head>
+        <title>Website Demonstration</title>
+        <base href="/demo/">
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/material.min.css" rel="stylesheet">
+        <link href="css/ripples.min.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+        <link rel="shortcut icon" type="ico" href="favicon.ico"/>
+
+    </head>
+
+    <body ng-controller="mainController">
+        
+        <nav class="navbar brand-orange navbar-fixed-top" role="navigation">
+            <div class="container">   
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-warning-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/demo">SquarePAC</a>
+              </div>
+              <div class="navbar-collapse collapse navbar-warning-collapse">
+                <ul class="nav navbar-nav">
+                  <li><a href="/demo/#/about">ABOUT</a></li>
+                  <li><a href="/demo/#/news">NEWS</a></li>
+                  <li><a href="/demo/#/gallery">GALLERY</a></li>
+                  <li><a href="/demo/#/who-we-are">WHO WE ARE</a></li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                  <input type="text" class="form-control col-lg-8" placeholder="Search">
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                    <a href="/demo/#/get-involved" data-target="#" class="dropdown-toggle" data-toggle="dropdown">GET INVOLVED<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="/demo/#/who-we-are">Lorem ipsum</a></li>
+                      <li><a href="/demo/#/who-we-are">Sit amet</a></li>
+                      <li><a href="/demo/#/who-we-are">Ultrices Vitae</a></li>
+                      <li class="divider"></li>
+                      <li><a href="/demo/#/who-we-are">Cras Pretium</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>     
+        </nav>
+        <div class = "container">
+            <img src="assets/full_logo_sp.png" style="float:left;max-width:50%;padding-top:19%;" />
+        </div>
+
+        <!-- Angular Call -->   
+        <div class="content page-wrap">
+            <div ng-view></div>
+        </div>
+        
+        
+        <!-- Dynamic Content Ends -->
+
+        
+        <!-- Scripts -->
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-route.min.js"></script>
+        <script src="js/ui-bootstrap.min.js"></script>
+        <script src="js/ui-bootstrap-tpls.min.js"></script>        
+        
+        <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+        <script src="js/ripples.min.js"></script>
+        <script src="js/material.min.js"></script>
+        <script src="js/main.js"></script>
+
+        <script type="text/javascript">
+
+        </script>
+
+    </body>
+
+    <footer>
+       
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading ">
+                        <h3 class="panel-title">Eget nisi efficitur</h3>
+                    </div>
+                    <div class="panel-body">
+                        Donec consequat condimentum nibh, quis semper mi rutrum id. Etiam scelerisque gravida dolor, id varius felis consequat quis. Morbi malesuada ante eu sem imperdiet, vel placerat magna rhoncus. Cras ullamcorper ornare magna sit amet elementum. Sed eget nisi efficitur, sagittis magna et, aliquam elit. Sed condimentum velit scelerisque iaculis malesuada. Nunc lacinia cursus vulputate. Sed commodo id quam sit amet consequat. Ut sodales enim mauris. Mauris et sapien feugiat, semper felis vitae, ultricies nibh.
+                    </div>
+                </div>  
+                </div>
+                    <div class = "col-md-6 ">
+                        <div class="list-group">
+                            <div class="list-group-item">
+                                <div class="row-picture">
+                                    <img class="circle" src="http://lorempixel.com/56/56/people/1" alt="icon">
+                                </div>
+                                <div class="row-content">
+                                    <h4 class="list-group-item-heading">Tile with avatar</h4>
+                                    <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus</p>
+                                </div>
+                            </div>
+                            <div class="list-group-separator"></div>
+                            <div class="list-group-item">
+                                <div class="row-picture">
+                                    <img class="circle" src="http://lorempixel.com/56/56/people/6" alt="icon">
+                                </div>
+                                <div class="row-content">
+                                    <h4 class="list-group-item-heading">Tile with another avatar</h4>
+                                    <p class="list-group-item-text">Maecenas sed diam eget risus varius blandit.</p>
+                                </div>
+                            </div>
+                            <div class="list-group-separator"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Some stuff -->
+    
+    </footer>
+    
+</html>

@@ -1,0 +1,96 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body    {
+    font-size:  13px !important;
+    background: url("../assets/dc1.jpg") no-repeat top center fixed;
+    background-size: 100% auto;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.header{
+    height: 45%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+footer{
+    background-color:#FCFCFC;
+    padding:  100px 0px 100px 0px;
+}
+hr{
+  border-top: 1px solid #e7e7e7;
+}
+section{
+    margin-top:0%;
+    margin-bottom:19%;
+    
+}
+
+/*BRAND OVERRIDES*/
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4    {
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+.h1     {
+    font-size: 42px !important;
+}
+
+.brand-purple  {
+    background-color: #b184c7 !important;  
+}
+.brand-teal  {
+    background-color: #84C79A !important;  
+}
+.brand-red  {
+    background-color: #E95353 !important;  
+}
+.brand-orange  {
+    background-color: #E99E53 !important;  
+}
+
+.btn-primary{
+    background-color: #84C79A!important;  
+}
+/*End Brand Overrides*/
+
+
+/*modal bug fix*/
+body.modal-open-noscroll
+{
+    padding-right: 0!important;
+}
+.modal-open-noscroll .navbar-fixed-top, .modal-open .navbar-fixed-bottom
+{
+    padding-right: 0!important;
+}
+.modal-open{
+    padding-right: 0!important;   
+}
+
+.content{
+    width: 100%;
+    background: #ffffff;
+    margin: 0;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+/*custom overrides*/
+.btn-ovr{
+    padding:42px !important;
+    font-size:65px!important;
+    width:150px!important;
+    height:150px!important;
+}
+
+
