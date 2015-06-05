@@ -1,24 +1,35 @@
+//routing
 $(document).ready(function() {
     // This command is used to initialize some elements and make them work properly
     $.material.init();
-
     
-        $('.modal').on('show.bs.modal', function () {
-        if ($(document).height() > $(window).height()) {
-            // no-scroll
-            $('body').addClass("modal-open-noscroll");
-        }
-        else {
-            $('body').removeClass("modal-open-noscroll");
-        }
+    $('.modal').on('show.bs.modal', function () {
+    if ($(document).height() > $(window).height()) {
+        // no-scroll
+        $('body').addClass("modal-open-noscroll");
+    }
+    else {
+        $('body').removeClass("modal-open-noscroll");
+    }
     })
     $('.modal').on('hide.bs.modal', function () {
         $('body').removeClass("modal-open-noscroll");
     })
+    
+    $(".submenu").hide();
+    
+    $(".multi-level")
+        .mouseover(function(){
+            $(".submenu").show();             
+        })
+        .mouseleave(function(){
+            $(".submenu").hide();
+        });
+
 });   
 
 
-var singlePage = angular.module('singlePage', ['ngRoute', 'ui.bootstrap']);
+var singlePage = angular.module('singlePage', ['ngRoute', 'ui.bootstrap','feeds']);
 
 singlePage.controller('mainController', function($scope){
     $scope.message = 'Working';
@@ -57,6 +68,8 @@ singlePage.config(function($routeProvider){
 
 });
 
+//gallery viewer
+
 singlePage.controller('folderCtrl', function ($scope, $http) {
   $scope.w = window.innerWidth;
   $scope.h = window.innerHeight-20;
@@ -89,3 +102,6 @@ singlePage.controller('folderCtrl', function ($scope, $http) {
 });
     
     
+//rss
+
+
